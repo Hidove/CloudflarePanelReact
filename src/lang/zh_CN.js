@@ -112,6 +112,8 @@ const zh_CN = {
 
     // Operation
     'Manage DNS': '管理DNS记录',
+    'Copy cname record': '拷贝cname记录',
+    "Copy successfully": "拷贝成功",
     'Delete': '删除',
 
     //Overview

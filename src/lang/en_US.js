@@ -96,6 +96,8 @@ const en_US = {
     "Onion routing": "Onion routing",
     "IP geolocation": "IP geolocation",
     "Manage DNS": "Manage DNS",
+    'Copy cname record': 'Copy cname record',
+    "Copy successfully": "Copy successfully",
     "Delete": "Delete",
     "Development model": "Development model",
     "Quick operation": "Quick operation",

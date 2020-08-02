@@ -8,9 +8,10 @@ import {
 
 import { dnsRecordUpdate, dnsRecordDelete } from '@service/zone';
 
-import FormattedMessage  from '@components/FormattedMessage';
+import FormattedMessage from '@components/FormattedMessage';
 
 import ImperativeFormatMessage from '@utils/ImperativeFormatMessage'
+import copy from 'copy-to-clipboard';
 
 function Operation(props) {
 
@@ -41,7 +42,13 @@ function Operation(props) {
                         })
                 }
             }></Button>
-            <Link to={'/user/zone/' + record.zone_id + '/dnsrecord/' + record.id + '/edit'}><Button><FormattedMessage id='Manage'/></Button></Link>
+            <Button type='primary' onClick={
+                () => {
+                    copy(record.name + '.cdn.cloudflare.net');
+                    message.success(ImperativeFormatMessage('Copy successfully'))
+                }
+            }><FormattedMessage id='Copy cname record' /></Button>
+            <Link to={'/user/zone/' + record.zone_id + '/dnsrecord/' + record.id + '/edit'}><Button><FormattedMessage id='Manage' /></Button></Link>
             <Button type="dashed" danger
                 loading={btnState}
                 onClick={

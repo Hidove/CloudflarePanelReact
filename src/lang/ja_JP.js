@@ -96,6 +96,8 @@ const ja_JP = {
     "Onion routing": "たまねぎルート",
     "IP geolocation": "IP地理位置",
     "Manage DNS": "DNSレコードの管理",
+    'Copy cname record': 'cnameレコードをコピーする',
+    "Copy successfully": "正常にコピー",
     "Delete": "削除",
     "Development model": "開発モード",
     "Quick operation": "クイック操作",

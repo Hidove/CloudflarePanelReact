@@ -97,6 +97,8 @@ const ko_KR = {
     "Onion routing": "양파 경로",
     "IP geolocation": "IP 지리 적 위치",
     "Manage DNS": "DNS 기록 관리",
+    'Copy cname record': 'cname 레코드 복사',
+    "Copy successfully": "성공적으로 복사",
     "Delete": "삭제 하 다.",
     "Development model": "개발 모델",
     "Quick operation": "빠 른 조작",
