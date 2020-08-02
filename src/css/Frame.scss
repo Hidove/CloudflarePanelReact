@@ -1,0 +1,57 @@
+.frame-container {
+    overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+    .frame-nav {
+
+        .logo {
+            height: 32px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            font-weight: bold;
+
+            a {
+                color: rgb(235, 232, 232);
+            }
+        }
+    }
+
+    .frame-layout {
+        min-width: 70vw;
+        .frame-layout-header {
+            background: #fff;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            .frame-layout-header-trigger {
+                font-size: 18px;
+                line-height: 64px;
+                padding: 0 24px;
+                cursor: pointer;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #1890ff;
+                }
+            }
+
+            .frame-layout-header-user-dropdown {
+                cursor: pointer;
+                margin-right: 3rem;
+            }
+        }
+
+        .frame-layout-content {
+            background: #fff;
+            margin: 24px 16px;
+            padding: 24px;
+            min-height: 80%;
+        }
+    }
+}
